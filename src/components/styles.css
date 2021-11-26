@@ -78,7 +78,10 @@ img {
     align-items: center;
     justify-content: center;
  }
-
+.genesis .buttonContainer {
+    display: block;
+    text-align: center;
+}
 .right-image {
 	visibility: visible;
     position: absolute;
@@ -154,7 +157,7 @@ img {
     align-self: center;
  }
 
- .HomeBody {
+.HomeBody {
 	 padding: 0 15%;
  }
 
@@ -167,11 +170,9 @@ img {
     margin-top: 115px;
  }
 
-
 .HomeContainer {
     margin-top: 40px;
  }
-
 
 .CatShowImage {
     opacity: 1;
@@ -180,15 +181,22 @@ img {
  }
 
 /*RoadMap*/
+.RoadMap h1{
+    text-align: center;
+    margin-top: 150px;
+    font-weight: bold;
+    margin-bottom: 100px;
+ }
 .RoadMap p span {
 	display: inline-block;
-	margin-right: 30px;	
+	margin-right: 30px;
+    font-weight: bold;
 }
-.RoadMap p span img {
-	margin-right: 10px;
+.RoadMap img {
+    position: absolute;
 }
 .RoadMap p {
-	padding-left: 150px;
+	padding-left: 90px;
 }
 
 /*FAQ*/
@@ -204,6 +212,11 @@ img {
 .Faq p {
 	line-height: 1.2;
 	margin-bottom: 40px;
+    position: relative;
+}
+.Faq p img{
+    position: absolute;
+    left: -80px;
 }
 
 .footer {
@@ -238,12 +251,15 @@ img {
 	.HowLabel {
 		width: 100% !important;
 	}
- }
- @media screen and (max-width: 988px) {
+    .pageHeader {
+        font-size: 100px !important;
+    }
+
 	.navbar {
 		margin-top: 0px;
 		text-align: center;
 	}
+	
 	.connect_mask {
 		text-align: center;
 	}
@@ -253,3 +269,37 @@ img {
 		margin-left: 0%;
 	}
  }
+@media screen and (max-width: 988px) {
+    .pageHeader {
+        font-size: 70px !important;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    body {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px ip !important;
+    }
+    .buttonContainer {
+        margin-top: 10px;
+    }
+    .footer {
+        margin-top: 50px;
+        text-align: center;
+     }
+     .wallet-div {
+         margin-top: 50px !important;
+     }
+     .SocialMediaGroup {
+         text-align: center;
+         margin-top: 0px;
+         padding: 0 0;
+     }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: block !important;
+    }
+}

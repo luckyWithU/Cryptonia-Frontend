@@ -1,10 +1,28 @@
+import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import image1 from '../assets/wallet1.png';
+import image2 from '../assets/wallet2.png';
+import twitter from '../assets/twitter.png';
+import discord from '../assets/discord.png';
 
 const Wallet = () => {
     return(
-        <div>
-            <div class="pageHeader">wallet</div>
-        </div>
+        <>
+            <Container>
+                <div class="pageHeader">wallet</div>
+                <div className="text-center">
+                    <img src={image1}/>
+                </div>
+                <div className="text-center wallet-div" style={{marginTop: "500px"}}>
+                    <img src={image2}/>
+                </div>
+            </Container>
+            <div className="footer"> 
+                <img src={twitter} />
+                <img src={discord} />
+                <div></div>
+            </div>
+        </>
     )
 }
 

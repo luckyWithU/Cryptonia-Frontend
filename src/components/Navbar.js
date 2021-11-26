@@ -7,26 +7,28 @@ import "./styles.css";
 const Navbar = () => {
     return(
         <Container fluid>
-            <NavContainer className="header">
-                <Row>
-                    <Col md={3}></Col>
-                    <Col md={6} className="d-none d-lg-block text-center"><Link style={{zIndex:"1", display:"inline-block"}} to="/"><LogoImage src={logo}/></Link></Col>
-                    <Col md={3} className="connect_mask">
-                        <Button className="imgButton">
-                            <ButtonLabel>connect to metamask</ButtonLabel>
-                        </Button>
-                    </Col>
-                </Row>
-            </NavContainer>
-            <BottomNavContainer className="navbar">
-                <BottomNav className="navbar">
-                    <NavLink><Link to="/genesis" style={{ textDecoration: 'none', color: "#fecf43" }}>Genesis</Link></NavLink>
-                    <NavLink><Link to="/roadmap" style={{ textDecoration: 'none', color: "#fecf43" }}>Roadmap</Link></NavLink>
-                    {/* <NavLink><Link to="/gallery" style={{ textDecoration: 'none', color: "black" }}>Gallery</Link></NavLink> */}
-                    <NavLink><Link to="/wallet" style={{ textDecoration: 'none', color: "#fecf43" }}>Wallet</Link></NavLink>
-                    <NavLink><Link to="/faq" style={{ textDecoration: 'none', color: "#fecf43" }}>FAQ</Link></NavLink>
-                </BottomNav>
-            </BottomNavContainer>
+            <Row>
+                <NavContainer className="header">
+                    <Row>
+                        <Col md={3}></Col>
+                        <Col md={6} className="d-none d-lg-block text-center"><Link style={{zIndex:"1", display:"inline-block"}} to="/"><LogoImage src={logo}/></Link></Col>
+                        <Col md={3} className="connect_mask">
+                            <Button className="imgButton">
+                                <ButtonLabel>connect to metamask</ButtonLabel>
+                            </Button>
+                        </Col>
+                    </Row>
+                </NavContainer>
+                <BottomNavContainer className="navbar">
+                    <BottomNav className="navbar">
+                        <NavLink><Link to="/genesis" style={{ textDecoration: 'none', color: "#fecf43" }}>Genesis</Link></NavLink>
+                        <NavLink><Link to="/roadmap" style={{ textDecoration: 'none', color: "#fecf43" }}>Roadmap</Link></NavLink>
+                        {/* <NavLink><Link to="/gallery" style={{ textDecoration: 'none', color: "black" }}>Gallery</Link></NavLink> */}
+                        <NavLink><Link to="/wallet" style={{ textDecoration: 'none', color: "#fecf43" }}>Wallet</Link></NavLink>
+                        <NavLink><Link to="/faq" style={{ textDecoration: 'none', color: "#fecf43" }}>FAQ</Link></NavLink>
+                    </BottomNav>
+                </BottomNavContainer>
+            </Row>
         </Container>
     )
 }

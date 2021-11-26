@@ -8,7 +8,7 @@ const FAQ = () => {
     return(
         <>
         <Container className="Faq">
-            <Header>FAQ</Header>
+            <div className="pageHeader">FAQ</div>
             <div>
             <p>Why should I buy a Cryptonia Kitten? Why is it unique?</p>
 
@@ -18,15 +18,15 @@ const FAQ = () => {
 
             <p>How can I buy a Cryptonia Kitten?</p>
 
-               <p style={{marginLeft: "3%"}}><img src={roadMap} />For websites to access your wallet, you’ll need to download and install the
+               <p style={{marginLeft: "120px"}}><img src={roadMap} />For websites to access your wallet, you’ll need to download and install the
                MetaMask browser plugin.</p>
 
-               <p style={{marginLeft: "3%"}}><img src={roadMap} />If you have an account, you can either create a new one or log in.</p>
+               <p style={{marginLeft: "120px"}}><img src={roadMap} />If you have an account, you can either create a new one or log in.</p>
               
-               <p style={{marginLeft: "3%"}}><img src={roadMap} />Add Ether to the wallet by purchasing or transferring funds. Coinbase also    
+               <p style={{marginLeft: "120px"}}><img src={roadMap} />Add Ether to the wallet by purchasing or transferring funds. Coinbase also    
                allows you to buy MetaMask directly.</p>
 
-               <p style={{marginLeft: "3%"}}><img src={roadMap} />This website will identify your MetaMask wallet and let you bid on, purchase
+               <p style={{marginLeft: "120px"}}><img src={roadMap} />This website will identify your MetaMask wallet and let you bid on, purchase
                and sell your “Cryptonia Kitten” after the extension is loaded.</p>
 
                 <p>What is the difference between a Genesis Cryptonia Kitten and a Generative Cryptonia Kitten?
@@ -74,12 +74,5 @@ const FAQ = () => {
         </>
     )
 }
-
-const Header = styled.div`
-    font: normal normal normal 152px/182px Kerox-NonCommercial;
-    text-align: center;
-    margin-top: 88px;
-    margin-bottom: 30px;
-`
 
 export default FAQ;

@@ -1,34 +1,39 @@
 import styled from 'styled-components'
 import twitter from '../assets/twitter.png';
 import discord from '../assets/discord.png';
+import kitties from '../assets/genesis.png';
 
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 const Genesis = () => {
     return(
         <div>
-            <Header>GENESIS</Header>
-            <SubHeader>You’ll find a mystery kitty waiting for you. </SubHeader>
-            
-            <div className="buttonContainer">
-                    <Button className="borderButton"></Button>
-                    <Button className="imgButton">CLAIM</Button>
+            <Container className="genesis">
+                <div className="pageHeader">GENESIS</div>
+                <SubHeader>You’ll find a mystery kitty waiting for you. </SubHeader>
+                
+                <div className="buttonContainer mb-5">
+                        <Button className="borderButton"></Button>
+                        <Button className="imgButton">CLAIM</Button>
+                </div>
+
+                {/*<LimitedLabel>limited edition</LimitedLabel>
+
+                <BuySection>
+                    <BuyLabel>Buy Cat</BuyLabel>
+                    <TextBox />
+                </BuySection>
+                <GenesisLabel>Genesis cryptonya kittens is limited to 1,500 pieces, each with a fixed cost of 0.5 ETH. This includes some unique 1/1 pieces!</GenesisLabel>
+                */}
+                <div className="text-center mt-5">
+                    <img src={kitties} />
+                </div>
+            </Container>
+            <div className="footer">
+                <img src={twitter} />
+                <img src={discord} />
+                <div></div>
             </div>
-
-            {/*<LimitedLabel>limited edition</LimitedLabel>
-
-            <BuySection>
-                <BuyLabel>Buy Cat</BuyLabel>
-                <TextBox />
-            </BuySection>
-            <GenesisLabel>Genesis cryptonya kittens is limited to 1,500 pieces, each with a fixed cost of 0.5 ETH. This includes some unique 1/1 pieces!</GenesisLabel>
-            */}
-            
-        
-            <SocialMediaGroup>
-                <TwitterImage src={twitter}/>
-                <DiscordImage src={discord}/>
-            </SocialMediaGroup>
         </div>
     )
 }
