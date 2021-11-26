@@ -1,0 +1,255 @@
+.text-right {
+	text-align: right;
+}
+.connect_btn {
+	background: url("../assets/connect_btn.png");
+	background-size: cover;
+}
+
+.imgButton {
+	background: url("../assets/connect_btn.png");
+	background-size: cover;
+	height: 78px;
+    width: 294px;
+	margin-left: 2%;
+    font-size: 32px;
+	border: 0px;
+	color: #000;
+}
+.header .imgButton {
+	position: relative;
+	margin-top: 100px;
+	margin-left: 5%;
+}
+.borderButton {
+	height: 78px;
+    width: 294px;
+    font-size: 32px;
+	margin-right: 2%;
+	border-radius: 30px;
+	border: 3px solid #FED144;
+	border-color: rgb(254, 207, 67);
+	background-color: transparent;
+}
+
+.imgButton:hover, .borderButton:hover {
+	background-color: transparent;
+}
+
+.navbar{
+    background-color: rgba(112, 0, 0, 1);
+	background-color: #000;
+    border-radius: 50px 50px 0 0;
+	margin-top: -50px;
+	margin-bottom: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+  }
+.pageHeader {
+	font: normal normal normal 152px/182px Kerox-NonCommercial;
+    text-align: center;
+    margin-top: 88px;
+    margin-bottom: 30px;
+	color:rgb(254, 207, 67);
+}
+
+/* home */
+.UnderLabel, .HowLabel, .RoadMap {
+    margin-top: 15px;
+    color: rgb(254, 207, 67);
+    font-family: Arial-Black;
+    font-size: 33px;
+ }
+
+ .UnderLabel h1, .HowLabel h1{
+	 margin-bottom: 35px;
+ }
+ .UnderLabel p, .HowLabel p {
+	 line-height: 1.2;
+	 margin-bottom: 30px;
+ }
+
+.buttonContainer {
+	display: flex;
+	margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+ }
+
+.right-image {
+	visibility: visible;
+    position: absolute;
+    top: -400px;
+    right: 0px;
+}
+.MuscleContainer {
+    display: flex;
+    justify-content: right;
+ }
+.MuscleCat {
+    position: absolute;
+    height: 2544px;
+    margin-top: -600px;
+    opacity: 1;
+}
+
+.SocialMediaGroup {
+    margin-top: -50px;
+	padding: 0 10%;
+ }
+ .SocialMediaGroup img {
+	max-width: 100%;
+    height: auto;
+ }
+
+.CatGroupImage {
+    height: 531px;
+ }
+
+.GoContainer {
+    margin-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.BuyMultipleBtn {
+    font: normal normal normal 42px/50px Kerox-NonCommercial;
+    color: #000000;
+ }
+.Gobutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }   
+.Gobox {
+    width: 175px;
+    height: 88px;
+    background: #FED144 0% 0% no-repeat padding-box;
+    border: 6px solid #000000;
+    border-radius: 40px 40px 0px 0px;
+ }
+.GoLabel {
+    margin-left: 75px;
+    font: normal normal normal 82px/98px Kerox-NonCommercial;
+    color: #000000;
+ }
+
+.BuyButton {
+    margin-top: 220px;
+    background: #FED144 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000099;
+    border-radius: 57px;
+    width: 669px;
+    height: 114px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+ }
+.BuyLabel {
+    font: normal normal normal 65px/78px Kerox-NonCommercial;
+    color: #000000;
+    align-self: center;
+ }
+
+ .HomeBody {
+	 padding: 0 15%;
+ }
+
+.AboutLabel {
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(254, 207, 67);
+    font: normal normal normal 42px/50px Kerox-NonCommercial;
+    margin-inline: auto;
+    margin-top: 115px;
+ }
+
+
+.HomeContainer {
+    margin-top: 40px;
+ }
+
+
+.CatShowImage {
+    opacity: 1;
+    padding:0px 20px;
+    text-align:center;
+ }
+
+/*RoadMap*/
+.RoadMap p span {
+	display: inline-block;
+	margin-right: 30px;	
+}
+.RoadMap p span img {
+	margin-right: 10px;
+}
+.RoadMap p {
+	padding-left: 150px;
+}
+
+/*FAQ*/
+.Faq {
+    margin-top: 15px;
+    color: rgb(254, 207, 67);
+    font-family: Arial-Black;
+    font-size: 33px;
+}
+ .Faq h1{
+	margin-bottom: 35px;
+}
+.Faq p {
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+
+.footer {
+    margin-top: 200px;
+	text-align: center;
+ }
+ .footer div{
+	height: 50px;
+	border-radius: 30px 30px 0 0;
+	background-color: #000;
+	margin-top: 20px;
+}
+ .footer img {
+	max-width: 100%;
+    height: auto;
+	margin: 0 5%;
+ }
+
+@media screen and (max-width: 1300px) {
+	.header .imgButton {
+		margin-left: 1%;
+	}	
+
+}
+ @media screen and (max-width: 988px) {
+	.borderButton {
+		margin: 0px 0px 20px 0;
+	}
+	.imgButton {
+		margin: 0;
+	}
+	.HowLabel {
+		width: 100% !important;
+	}
+ }
+ @media screen and (max-width: 988px) {
+	.navbar {
+		margin-top: 0px;
+		text-align: center;
+	}
+	.connect_mask {
+		text-align: center;
+	}
+	.header .imgButton {
+		position: relative;
+		margin-top: 0px;
+		margin-left: 0%;
+	}
+ }
